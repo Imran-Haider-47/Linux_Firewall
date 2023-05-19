@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>426</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget_rules">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>631</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>20</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget{
+	background-color:rgb(144, 238, 144)
+}</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Triangular</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_view_rules">
+    <attribute name="title">
+     <string>View Rules</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_view_rules">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>611</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget{
+	background-color:rgb(255, 182, 193)
+
+}</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>Rule No.</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Table</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Chain</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Protocol</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Port</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Website</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>IP Adress</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Action</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>0</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLabel" name="label_select_chain_view_rule">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Select Chain</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_view_rule_chain">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>INPUT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OUTPUT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FORWARD</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_add_rule">
+    <attribute name="title">
+     <string>Add Rule</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>20</y>
+       <width>320</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Ip Address</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_ipaddress">
+        <property name="placeholderText">
+         <string>Enter ip address</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>80</y>
+       <width>171</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Port #</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_port">
+        <property name="placeholderText">
+         <string>Enter Port Number</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>130</y>
+       <width>231</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Action</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_action_type">
+        <item>
+         <property name="text">
+          <string>ACCEPT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>DROP</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>591</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Website Adress</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_webAddress">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>Enter website address </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_add_rule">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>145</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	background-color:rgb(218, 218, 218)
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>Add Rule</string>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_add_rule_msg">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Message:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Select Chain</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_chain">
+        <item>
+         <property name="text">
+          <string>INPUT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OUTPUT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FORWARD</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PREROUTE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>POSTROUTE</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>13</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Select Table</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_table">
+        <item>
+         <property name="text">
+          <string>FILTER</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NAT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MANGLE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RAW</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Traffic Type</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_traffic_type">
+        <item>
+         <property name="text">
+          <string>TCP</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ICMP</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UDP</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_delete_rule">
+    <attribute name="title">
+     <string>Delete Rule</string>
+    </attribute>
+    <widget class="QLabel" name="label_delete_rule_msg">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>511</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Message:</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>311</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Select Chain</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_delete_rule_chain">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>INPUT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>OUTPUT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FORWARD</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_enter_rule_number">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Enter Rule Number</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_del_rule_no">
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="placeholderText">
+           <string>47</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_delete_rule">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(250,0,0)
+
+}</string>
+        </property>
+        <property name="text">
+         <string>Delete Rule</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

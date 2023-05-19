@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_About_Us</class>
+ <widget class="QDialog" name="Dialog_About_Us">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>655</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+    <italic>true</italic>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: rgb(250,200,200)
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>641</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>This product is developed by the undergraduate final year student named 
+Anthonio Ekwe under the supervision of Professor of University of Hertfordshire, 
+United Kingdom. 
+ This is capstone project which is related to the field of cybersecurity. 
+We are team of three members working on this project.
+ Our third team member is the second marker of this project. 
+ For further details, you can contact us at the following email.
+ ae20abo@herts.ac.uk</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_about_us_label">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>30</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	color: red
+
+}</string>
+   </property>
+   <property name="text">
+    <string>About Us</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../../Pictures/Anthonio_firewall/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

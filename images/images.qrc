@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="images">
+    <file>drone.jpg</file>
+    <file>shower.jpg</file>
+    <file>hertfordshire.jpg</file>
+    <file>help.png</file>
+    <file>id-card.png</file>
+    <file>rules.png</file>
+    <file>firewall.png</file>
+    <file>compliant.png</file>
+    <file>chain.png</file>
+  </qresource>
+</RCC>
